@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Brand */
+  --color-momentum:   #098DFC;
+  --color-heritage:   #26AAE1;
+  --color-navy:       #001E40;
+  --color-yellow:     #FFF784;
+  --color-white:      #F5F8FC;
+  --color-pure-white: #FFFFFF;
+
+  /* Extended / category accents */
+  --color-violet: #A775E4;
+  --color-rose:   #EB86BF;
+  --color-amber:  #FF9E30;
+  --color-sky:    #A4EBFF;
+  --color-lime:   #B8DF56;
+  --color-coral:  #DF5658;
+
+  /* Semantic */
+  --color-primary:        #098DFC;
+  --color-primary-dark:   #0670C8;
+  --color-bg-page:        #F7F9FC;
+  --color-text-primary:   #001E40;
+  --color-text-secondary: #4A6278;
+  --color-text-tertiary:  #7F94A8;
+  --color-border:         rgba(0,30,64,0.15);
+  --color-border-strong:  rgba(0,30,64,0.30);
+  --color-error:          #DF5658;
+  --color-error-dark:     #B83335;
+  --color-success:        #B8DF56;
+  --color-success-dark:   #3A5800;
+  --color-warning:        #FFF784;
+  --color-warning-dark:   #7A6A00;
+
+  /* Typography */
+  --font-display: 'DM Sans', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, sans-serif;
+
+  /* Elevation */
+  --shadow-1:     0 1px 2px rgba(0,30,64,.06), 0 1px 1px rgba(0,30,64,.04);
+  --shadow-2:     0 4px 12px rgba(0,30,64,.08), 0 1px 2px rgba(0,30,64,.04);
+  --shadow-3:     0 12px 32px rgba(0,30,64,.10), 0 2px 6px rgba(0,30,64,.05);
+  --shadow-focus: 0 0 0 4px rgba(9,141,252,.25);
+}
