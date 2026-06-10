@@ -1,10 +1,11 @@
+import React from 'react';
 import { ShoppingBag, Shirt, Globe, BookOpen, Check } from 'lucide-react';
 import { StepFrame } from '../StepFrame';
 import { AmountInput } from '../AmountInput';
 import { EarnPreview } from '../EarnPreview';
 import { PRESETS, ONLINE_CATS, type OnlineSubKey } from '../../lib/data';
 
-const CAT_ICONS: Record<OnlineSubKey, JSX.Element> = {
+const CAT_ICONS: Record<OnlineSubKey, React.ReactElement> = {
   retail:  <ShoppingBag size={16} />,
   fashion: <Shirt size={16} />,
   sports:  <Globe size={16} />,
