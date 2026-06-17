@@ -5,7 +5,6 @@ import { GroceriesStep } from './components/steps/GroceriesStep';
 import { OnlineStep } from './components/steps/OnlineStep';
 import { BillsStep } from './components/steps/BillsStep';
 import { TravelStep } from './components/steps/TravelStep';
-import { PeriodStep } from './components/steps/PeriodStep';
 import { ResultsScreen } from './components/results/ResultsScreen';
 import {
   STEP_IDS, EMPTY_SPEND, MY_AVERAGE_SPEND,
@@ -102,8 +101,6 @@ export default function App() {
         return <BillsStep value={spend.bills} onChange={setSpendKey('bills')} onNext={goNext} onBack={goBack} />;
       case 'travel':
         return <TravelStep value={spend.travel} onChange={setSpendKey('travel')} onNext={goNext} onBack={goBack} />;
-      case 'period':
-        return <PeriodStep value={period} onChange={setPeriod} onNext={goNext} onBack={goBack} />;
       case 'results':
         return <ResultsScreen spend={spend} period={period} onPeriodChange={setPeriod} onRestart={restart} />;
       default:
@@ -125,7 +122,7 @@ export default function App() {
           <div className="desktop-context-eyebrow">Points calculator</div>
           <h2 className="desktop-context-title">A two-minute look at what you'd earn.</h2>
           <p className="desktop-context-sub">
-            Six quick questions about your monthly habits. We'll project the BonusLink points you'd collect — and the ringgit value you could redeem.
+            Five quick questions about your monthly habits. We'll project the BonusLink points you'd collect — and the ringgit value you could redeem.
           </p>
           <div className="desktop-context-meta">
             <div className="dcm-item">

@@ -32,7 +32,7 @@ export function OnlineStep({ total, onTotalChange, selected, onSelectedChange, o
       icon={<ShoppingBag size={28} />}
       iconColor="var(--color-violet)"
       iconTint="rgba(167,117,228,0.16)"
-      category="Question 3 of 6 · Online shopping"
+      category="Question 3 of 5 · Online shopping"
       title="What do you shop online?"
       subtitle="Pick the categories that match your habits, then tell us your typical monthly total."
       tip="Shopee, Lazada, Zalora — RM1 earns 1 pt across all online partners."

@@ -1,7 +1,7 @@
 import { type ReactNode } from 'react';
 import { ChevronLeft, Sparkles, ArrowRight } from 'lucide-react';
 
-const NUM_QUESTIONS = 6;
+const NUM_QUESTIONS = 5;
 
 interface PrimaryAction { label: string; onClick: () => void; disabled?: boolean; }
 interface SecondaryAction { label: string; onClick: () => void; }
@@ -19,13 +19,14 @@ interface Props {
   tip?: string;
   primary?: PrimaryAction;
   secondary?: SecondaryAction;
+  tertiary?: SecondaryAction;
   className?: string;
 }
 
 export function StepFrame({
   questionIndex, onBack, icon, iconColor, iconTint,
   category, title, subtitle, children, tip,
-  primary, secondary, className = '',
+  primary, secondary, tertiary, className = '',
 }: Props) {
   return (
     <div className={'step ' + className}>
@@ -75,8 +76,15 @@ export function StepFrame({
       </div>
 
       <div className="step-foot">
-        {secondary && (
-          <button className="step-skip" onClick={secondary.onClick}>{secondary.label}</button>
+        {(secondary || tertiary) && (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+            {secondary && (
+              <button className="step-skip" onClick={secondary.onClick}>{secondary.label}</button>
+            )}
+            {tertiary && (
+              <button className="step-skip" onClick={tertiary.onClick}>{tertiary.label}</button>
+            )}
+          </div>
         )}
         {primary && (
           <button

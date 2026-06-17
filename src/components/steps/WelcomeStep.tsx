@@ -22,7 +22,7 @@ export function WelcomeStep({ onStart, onQuick }: Props) {
           See what your everyday spend <em>really</em> earns.
         </h1>
         <p className="welcome-sub">
-          Six quick questions about your monthly habits. We'll project the BonusLink points you'd collect — and the ringgit value you could redeem.
+          Five quick questions about your monthly habits. We'll project the BonusLink points you'd collect — and the ringgit value you could redeem.
         </p>
         <div className="welcome-meta">
           <span><strong>6</strong> questions</span>

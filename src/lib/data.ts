@@ -76,7 +76,7 @@ export const ALL_SPEND_KEYS: SpendKey[] = ['fuel', 'groceries', 'fashion', 'reta
 
 export const ONLINE_SUB_KEYS: OnlineSubKey[] = ['retail', 'fashion', 'sports', 'books'];
 
-export const STEP_IDS = ['welcome', 'fuel', 'groceries', 'online', 'bills', 'travel', 'period', 'results'] as const;
+export const STEP_IDS = ['welcome', 'fuel', 'groceries', 'online', 'bills', 'travel', 'results'] as const;
 export type StepId = typeof STEP_IDS[number];
 
 export interface OnlineCat {

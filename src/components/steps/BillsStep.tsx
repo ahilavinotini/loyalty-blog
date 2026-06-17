@@ -21,7 +21,7 @@ export function BillsStep({ value, onChange, onNext, onBack }: Props) {
       icon={<CreditCard size={28} />}
       iconColor="var(--color-momentum)"
       iconTint="rgba(9,141,252,0.10)"
-      category="Question 4 of 6 · Bills"
+      category="Question 4 of 5 · Bills"
       title="Now the recurring bills."
       subtitle="Add up your monthly phone, electricity, internet and water — what's the total?"
       tip="TNB, Unifi, Astro, Indah Water — every ringgit earns 1 point."

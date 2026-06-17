@@ -41,7 +41,7 @@ export function FuelStep({ value, onChange, onNext, onBack }: Props) {
       icon={<Fuel size={28} />}
       iconColor="var(--color-amber)"
       iconTint="rgba(255,158,48,0.16)"
-      category="Question 1 of 6 · Fuel"
+      category="Question 1 of 5 · Fuel"
       title="Let's start at the pump."
       subtitle="Roughly how much do you spend on fuel each month? Petronas, Shell and Caltex all count."
       tip={unlocked
@@ -49,6 +49,7 @@ export function FuelStep({ value, onChange, onNext, onBack }: Props) {
         : 'Spend more than RM100 and your earn rate jumps to 1.5× — automatically.'}
       primary={{ label: 'Continue', onClick: onNext }}
       secondary={{ label: "I don't drive", onClick: () => { onChange(0); onNext(); } }}
+      tertiary={{ label: "I drive EV", onClick: () => { onChange(0); onNext(); } }}
     >
       <AmountInput value={value} onChange={onChange} presets={PRESETS.fuel} />
       <EarnPreview ptsPerMonth={pts} />
