@@ -2,10 +2,9 @@ import { ArrowRight } from 'lucide-react';
 
 interface Props {
   onStart: () => void;
-  onQuick: () => void;
 }
 
-export function WelcomeStep({ onStart, onQuick }: Props) {
+export function WelcomeStep({ onStart }: Props) {
   return (
     <div className="step is-welcome">
       <div className="welcome-glow" />
@@ -35,9 +34,6 @@ export function WelcomeStep({ onStart, onQuick }: Props) {
         <button className="step-primary welcome-primary" onClick={onStart}>
           Get started
           <ArrowRight size={16} />
-        </button>
-        <button className="welcome-quick" onClick={onQuick}>
-          Show me average values instead
         </button>
       </div>
     </div>

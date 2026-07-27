@@ -743,15 +743,6 @@ input[type="number"], input[type="text"] {
   align-items: center;
 }
 .welcome-primary { width: 100%; }
-.welcome-quick {
-  font-size: 13px;
-  color: var(--color-text-secondary);
-  font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 3px;
-  text-decoration-color: var(--color-border);
-}
-.welcome-quick:hover { color: var(--color-momentum); text-decoration-color: var(--color-momentum); }
 
 /* ===========================
    RESULTS SCREEN

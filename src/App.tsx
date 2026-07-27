@@ -7,7 +7,7 @@ import { BillsStep } from './components/steps/BillsStep';
 import { TravelStep } from './components/steps/TravelStep';
 import { ResultsScreen } from './components/results/ResultsScreen';
 import {
-  STEP_IDS, EMPTY_SPEND, MY_AVERAGE_SPEND,
+  STEP_IDS, EMPTY_SPEND,
   type StepId, type Spend, type PeriodKey, type OnlineSubKey,
 } from './lib/data';
 
@@ -65,23 +65,13 @@ export default function App() {
     setStepId('welcome');
   };
 
-  const useAverages = () => {
-    setSpend({ ...MY_AVERAGE_SPEND });
-    const onlineSum = MY_AVERAGE_SPEND.fashion + MY_AVERAGE_SPEND.retail + MY_AVERAGE_SPEND.sports + MY_AVERAGE_SPEND.books;
-    setOnlineTotal(onlineSum);
-    setOnlineSelected(['retail', 'fashion', 'sports', 'books']);
-    setPeriod('1y');
-    setDirection(1);
-    setStepId('results');
-  };
-
   const setSpendKey = (key: keyof Spend) => (val: number) =>
     setSpend(s => ({ ...s, [key]: val }));
 
   const renderStep = () => {
     switch (stepId) {
       case 'welcome':
-        return <WelcomeStep onStart={() => goTo('fuel')} onQuick={useAverages} />;
+        return <WelcomeStep onStart={() => goTo('fuel')} />;
       case 'fuel':
         return <FuelStep value={spend.fuel} onChange={setSpendKey('fuel')} onNext={goNext} onBack={goBack} />;
       case 'groceries':
